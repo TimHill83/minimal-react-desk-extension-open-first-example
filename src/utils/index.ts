@@ -26,7 +26,7 @@ export const getCurrentItem = async () => {
 
   try {
     const ticket = await ZOHODESK.get('ticket');
-    console.log('Keyzapp Helper: We got a ticket', ticket);
+    console.log('Desk Extension Example: We got a ticket', ticket);
     return ticket as TicketResponse;
     // try to return the ticket
   } catch (err) {
@@ -59,7 +59,7 @@ export const createModal = async <T = any>(
   title: string,
   theData?: T
 ) => {
-  console.log('Keyzapp Helper: CreateModal Called', {
+  console.log('Desk Extension Example: CreateModal Called', {
     App,
     url,
     title,
@@ -79,7 +79,7 @@ export const createModal = async <T = any>(
       data: theData
     };
 
-    console.log('Keyzapp Helper: Emmitting parentData:', dataToSend);
+    console.log('Desk Extension Example: Emmitting parentData:', dataToSend);
     modalInstance.emit('parentData', dataToSend);
   });
 };
@@ -89,7 +89,7 @@ export const createModal = async <T = any>(
  * @returns An array of emails
  */
 export const extractEmails = (input: string | undefined): string[] => {
-  console.log('Keyzapp Helper: Extracting Emails from', input);
+  console.log('Desk Extension Example: Extracting Emails from', input);
   const regex = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b/g;
   const matches = input?.match(regex);
   return matches || [];

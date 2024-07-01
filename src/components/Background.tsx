@@ -19,7 +19,7 @@ export const BackgroundApp = () => {
       ZOHODESK.invoke('ROUTE_TO', {
         entity: 'extension',
         location: 'desk.ticket.detail.lefttab',
-        name: 'Keyzapp Helper'
+        name: 'Example Extension'
       });
     }
   }, [currentView]);
@@ -28,7 +28,7 @@ export const BackgroundApp = () => {
     //Start up logic for the Extension
     const initializeApp = async () => {
       console.log(
-        'Keyzapp Helper: Initializing Keyzapp Helper Background Checker'
+        'Desk Extension Example: Initializing Example Extension Background Widget'
       );
 
       try {
@@ -40,17 +40,19 @@ export const BackgroundApp = () => {
           return;
         }
       } catch (err) {
-        console.log('Keyzapp Helper: Error loading App');
+        console.log('Desk Extension Example: Error loading App');
       }
     };
 
     const handlePageChange = (pageChangeData: PageChangeData) => {
-      console.log('Keyzapp Helper: pageChange', pageChangeData);
+      console.log('Desk Extension Example: pageChange', pageChangeData);
       setCurrentView(pageChangeData.currentView);
     };
 
     initializeApp();
-    console.log('Keyzapp Helper: Background Checker initilaization complete');
+    console.log(
+      'Desk Extension Example: Background Widget initilaization complete'
+    );
   }, []);
 
   return null; // This component doesn't render anything

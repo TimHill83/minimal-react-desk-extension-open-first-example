@@ -19,9 +19,9 @@ const ModalContent = <T,>({ children }: ModalProps<T>) => {
   const [parentData, setParentData] = useState<ParentData<T> | null>(null);
 
   useEffect(() => {
-    console.log('Keyzapp Helper: Modal: useEffect');
+    console.log('Desk Extension Example: Modal: useEffect');
     if (!app) {
-      console.log('Keyzapp Helper: Modal: app is null');
+      console.log('Desk Extension Example: Modal: app is null');
       return;
     }
     //Set modal to largest size
@@ -29,11 +29,11 @@ const ModalContent = <T,>({ children }: ModalProps<T>) => {
 
     //Set up a listener for the ticket data, that will update the state
     app.instance.on('parentData', function (data: ParentData<T>) {
-      console.log('Keyzapp Helper: Parent Data Received:', data);
+      console.log('Desk Extension Example: Parent Data Received:', data);
       setParentData(data);
     });
 
-    console.log('Keyzapp Helper: Modal: emit modalReady');
+    console.log('Desk Extension Example: Modal: emit modalReady');
     app.instance.emit('modalReady');
   }, [app]);
 
@@ -79,7 +79,7 @@ const ShowTicketInfo = () => {
 
     //Set up a listener for the ticket data, that will update the state
     app.instance.on('ticketData', function (data: Ticket) {
-      console.log('Keyzapp Helper: ticketData', data);
+      console.log('Desk Extension Example: ticketData', data);
       setTicket(data);
     });
 

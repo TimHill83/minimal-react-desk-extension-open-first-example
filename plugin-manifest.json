@@ -11,7 +11,7 @@
   "modules": {
     "widgets": [
       {
-        "name": "Keyzapp Helper",
+        "name": "Example Extension",
         "location": "desk.ticket.detail.lefttab",
         "url": "/app/keyzapp-helper-main.html",
         "logo": "/app/img/logo.png",
@@ -30,7 +30,7 @@
   "zohoAuthorisation": {
     "type": "connectors",
     "connectionLinkName": "keyzapphelperzohodeskconnnection",
-    "connectionName": "Keyzapp Helper Zoho Desk Connnection",
+    "connectionName": "Example Extension Zoho Desk Connnection",
     "serviceName": "zlabs_integration",
     "userAccess": true,
     "isUserDefinedService": false,
