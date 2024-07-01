@@ -1,5 +1,5 @@
 {
-  "name": "keyzapp-zoho-desk-extension",
+  "name": "example-zoho-desk-extension",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -7,8 +7,7 @@
     "start": "node server/index.js",
     "build": "webpack",
     "prepack": "node ./prepack.js",
-    "test": "vitest",
-    "compile-types-to-index": "tsc-watch --onSuccess \"node scripts/compile-types-to-index.js\""
+    "test": "vitest"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.1.2",

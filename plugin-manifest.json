@@ -13,12 +13,12 @@
       {
         "name": "Example Extension",
         "location": "desk.ticket.detail.lefttab",
-        "url": "/app/keyzapp-helper-main.html",
+        "url": "/app/example-main.html",
         "logo": "/app/img/logo.png",
         "icon": "/app/img/icon.png"
       },
       {
-        "name": "Keyzapp Checker",
+        "name": "Example Background",
         "location": "desk.background",
         "url": "/app/background-checker.html"
       }
@@ -26,37 +26,6 @@
   },
   "cspDomains": {
     "connect-src": []
-  },
-  "zohoAuthorisation": {
-    "type": "connectors",
-    "connectionLinkName": "keyzapphelperzohodeskconnnection",
-    "connectionName": "Example Extension Zoho Desk Connnection",
-    "serviceName": "zlabs_integration",
-    "userAccess": true,
-    "isUserDefinedService": false,
-    "sharedBy": "633754463",
-    "scope": [
-      "Desk.tickets.ALL",
-      "Desk.tasks.ALL",
-      "Desk.settings.ALL",
-      "Desk.search.READ",
-      "Desk.extensions.ALL",
-      "Desk.zia.ALL",
-      "Desk.contacts.ALL",
-      "Desk.basic.ALL",
-      "Desk.articles.ALL",
-      "Desk.calls.ALL",
-      "Desk.events.ALL",
-      "Desk.community.ALL",
-      "Desk.activities.READ",
-      "Desk.products.READ",
-      "Desk.imports",
-      "Desk.integrations.ALL",
-      "Desk.products.UPDATE",
-      "Desk.activities.CREATE",
-      "Desk.activities.DELETE",
-      "Desk.custommodule.ALL"
-    ]
   },
   "connectors": [],
   "config": [],

@@ -1,10 +1,10 @@
 import { ZohoDeskProvider } from '../ZohoDeskContext/ZohoDeskProvider';
-import KeyzappHelperLeftPanel from './KeyzappHelperLeftPanel';
+import LeftPanel from './LeftPanel';
 
 const App = () => {
   return (
     <ZohoDeskProvider>
-      <KeyzappHelperLeftPanel />
+      <LeftPanel />
     </ZohoDeskProvider>
   );
 };

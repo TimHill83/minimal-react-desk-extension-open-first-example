@@ -12,11 +12,7 @@ module.exports = (mode = 'production') => ({
       sourceFolder,
       'background-checker.tsx'
     ),
-    'keyzapp-helper-main': path.join(
-      projectRootDir,
-      sourceFolder,
-      'keyzapp-helper-main.tsx'
-    )
+    'example-main': path.join(projectRootDir, sourceFolder, 'example-main.tsx')
   },
   output: {
     filename: 'js/[name].js',

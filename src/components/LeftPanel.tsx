@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { ZohoDeskContext } from '../ZohoDeskContext/ZohoDeskContext';
 
-const KeyzappHelperLeftPanel = () => {
+const LeftPanel = () => {
   const { app, loading } = useContext(ZohoDeskContext);
   const instance = app?.instance;
 
@@ -12,4 +12,4 @@ const KeyzappHelperLeftPanel = () => {
   }
 };
 
-export default KeyzappHelperLeftPanel;
+export default LeftPanel;

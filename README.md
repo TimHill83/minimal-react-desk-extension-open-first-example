@@ -1,4 +1,4 @@
-# Keyzapp Zoho Desk Extension
+# Example Zoho Desk Extension
 
 ## Getting Started
 
